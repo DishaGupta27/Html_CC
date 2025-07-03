@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff5733;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .section-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+
+        .project-title {
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+        }
+
+        input,
+        textarea {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100px;
+            padding: 8px;
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="section-box">
+            <p>Hi, I'm a web developer with a passion for building functional and beautiful applications.</p>
+            <img src="https://via.placeholder.com/50" alt="profile picture">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="section-box">
+            <p class="project-title">Project One: Personal Blog</p>
+            <p>A personal blog site built to share ideas and articles on technology.</p>
+            <ul>
+                <li><a href="#">Live Preview</a></li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <p class="project-title">Project Two: E-commerce Site</p>
+            <p>A mock e-commerce website that simulates a shopping experience.</p>
+            <ul>
+                <li><a href="#">Live Preview</a></li>
+                <li>React</li>
+                <li>Redux</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio</p>
+        <p>Follow me:
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
