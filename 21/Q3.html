@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        section {
+            width: 200px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Simple Image Gallery</h1>
+
+    <div class="gallery">
+        <section>
+            <img src="https://via.placeholder.com/200x150?text=Nature" alt="Beautiful nature scenery" />
+            <a href="https://www.nationalgeographic.com/environment" target="_blank">Learn about Nature</a>
+        </section>
+
+        <section>
+            <img src="https://via.placeholder.com/200x150?text=Technology" alt="Modern technology devices" />
+            <a href="https://www.techcrunch.com" target="_blank">Explore Technology News</a>
+        </section>
+
+        <section>
+            <img src="https://via.placeholder.com/200x150?text=Space" alt="Galaxy and stars in space" />
+            <a href="https://www.nasa.gov" target="_blank">Visit NASA's Website</a>
+        </section>
+    </div>
+
+</body>
+
+</html>
