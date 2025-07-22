@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .box1 {
+            background-color: #ffcccb;
+            padding: 20px;
+            border: 5px solid red;
+            margin: 20px;
+            width: 300px;
+            box-sizing: content-box;
+        }
+
+        .box2 {
+            background-color: #c1f0f6;
+            padding: 30px;
+            border: 10px dashed #00bcd4;
+            margin: 30px;
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        .box3 {
+            background-color: #d1f7c4;
+            padding: 15px 25px;
+            border: 8px dotted green;
+            margin: 40px;
+            width: 280px;
+            /* No box-sizing applied: defaults to content-box */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model Example</h1>
+
+    <div class="box box1">
+        <strong>Box 1 (box-sizing: content-box)</strong><br>
+        This box has padding, a red solid border, and a margin. The width only applies to the content area.
+    </div>
+
+    <div class="box box2">
+        <strong>Box 2 (box-sizing: border-box)</strong><br>
+        This box has more padding, a dashed border, and margin. The width includes padding and border.
+    </div>
+
+    <div class="box box3">
+        <strong>Box 3 (default box-sizing: content-box)</strong><br>
+        This box uses default box-sizing, has different padding and a green dotted border.
+    </div>
+
+</body>
+
+</html>

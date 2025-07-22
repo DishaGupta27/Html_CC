@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid black;
+        }
+
+        #block-element {
+            display: block;
+            background-color: lightcoral;
+            width: 100%;
+        }
+
+        #inline-element {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px;
+            border: 2px solid darkgreen;
+        }
+
+        #inline-block-element {
+            display: inline-block;
+            background-color: lightblue;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+            border: 2px dashed blue;
+        }
+
+        #hidden-element {
+            display: none;
+            background-color: lightgray;
+            padding: 10px;
+            border: 2px dotted gray;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Display Property Demonstration</h2>
+
+    <div id="block-element" class="box">
+        I am a block element. I take full width.
+    </div>
+
+    <span id="inline-element" class="box">
+        I am an inline element.
+    </span>
+
+    <div id="inline-block-element" class="box">
+        Inline-Block Box
+    </div>
+
+    <div id="hidden-element" class="box">
+        I was hidden using display: none.
+    </div>
+
+    <button onclick="toggleHiddenElement()">Toggle Hidden Element</button>
+
+    <script>
+        function toggleHiddenElement() {
+            const el = document.getElementById("hidden-element");
+            el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>
